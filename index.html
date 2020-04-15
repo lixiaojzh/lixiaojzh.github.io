@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="https://lixiaojzh.github.io/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
@@ -56,7 +56,7 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://lixiaojzh.github.io"></form>
       </div>
     </div>
   </div>
@@ -166,13 +166,13 @@
 
 
 
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1d7968f8e48&gt;</code></pre><p><img src="/.com//output_14_1.png" alt="png"></p>
+<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1d7968f8e48&gt;</code></pre><p><img src="/.io//output_14_1.png" alt="png"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Districts = gpd.read_file(<span class="string">r'D:\ARCGIS\mygeodata\nz_ta-polygon.shp'</span>)</span><br><span class="line">Districts.plot()</span><br></pre></td></tr></table></figure>
 
 
 
 
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1d794570be0&gt;</code></pre><p><img src="/.com//output_15_1.png" alt="png"></p>
+<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1d794570be0&gt;</code></pre><p><img src="/.io//output_15_1.png" alt="png"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Districts.head(<span class="number">5</span>)</span><br></pre></td></tr></table></figure>
 
 
@@ -326,7 +326,7 @@
 
 
 
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1d7985a87b8&gt;</code></pre><p><img src="/.com//output_21_1.png" alt="png"></p>
+<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1d7985a87b8&gt;</code></pre><p><img src="/.io//output_21_1.png" alt="png"></p>
 <h6 id="Select-the-District-with-the-name-starting-with-‘A’"><a href="#Select-the-District-with-the-name-starting-with-‘A’" class="headerlink" title="Select the District with the name starting with ‘A’"></a>Select the District with the name starting with ‘A’</h6><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Districts[Districts.TA2016_NAM.str.startswith(<span class="string">'A'</span>)]</span><br></pre></td></tr></table></figure>
 
 
@@ -388,7 +388,7 @@
 
 
 
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1d7985d5c50&gt;</code></pre><p><img src="/.com//output_24_1.png" alt="png"></p>
+<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1d7985d5c50&gt;</code></pre><p><img src="/.io//output_24_1.png" alt="png"></p>
 <h3 id="Write-the-info-into-files"><a href="#Write-the-info-into-files" class="headerlink" title="Write the info into files"></a>Write the info into files</h3><h4 id="Writing-to-shp-files"><a href="#Writing-to-shp-files" class="headerlink" title="Writing to shp files"></a>Writing to shp files</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cities.to_file(<span class="string">'D:\ARCGIS\Covid-19 Cases in New Zealand\output\DHI_POINTS_COPY.shp'</span>)</span><br></pre></td></tr></table></figure>
 
 <h4 id="Writing-to-GeoJason"><a href="#Writing-to-GeoJason" class="headerlink" title="Writing to GeoJason"></a>Writing to GeoJason</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cities.to_file(<span class="string">'D:\ARCGIS\Covid-19 Cases in New Zealand\output\DHI_POINTS.geojson'</span>, driver = <span class="string">'GeoJSON'</span>)</span><br></pre></td></tr></table></figure>
@@ -579,7 +579,7 @@
 
 
 
-<p><img src="/.com//output_37_0.svg" alt="svg"></p>
+<p><img src="/.io//output_37_0.svg" alt="svg"></p>
 <h4 id="Creating-shapely-Points-from-latitude-and-longtitude"><a href="#Creating-shapely-Points-from-latitude-and-longtitude" class="headerlink" title="Creating shapely Points from latitude and longtitude"></a>Creating shapely Points from latitude and longtitude</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">points = df2.apply(<span class="keyword">lambda</span> row:Point(row.Longitude,row.Latitude), axis =<span class="number">1</span>)<span class="comment"># Attention: axis =1</span></span><br><span class="line">points.head()</span><br></pre></td></tr></table></figure>
 
 
@@ -646,7 +646,7 @@ dtype: object</code></pre><h4 id="Making-a-geodataframe-by-dataframe-and-geo-poi
 
 
 
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1d7967c0390&gt;</code></pre><p><img src="/.com//output_42_1.png" alt="png"></p>
+<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1d7967c0390&gt;</code></pre><p><img src="/.io//output_42_1.png" alt="png"></p>
 <h1 id="04-What-is-a-Coordinate-Reference-Systems"><a href="#04-What-is-a-Coordinate-Reference-Systems" class="headerlink" title="04. What is a Coordinate Reference Systems"></a>04. What is a Coordinate Reference Systems</h1><h3 id="Coordinate-Reference-Systems-Geographic-Coordinate-Systems"><a href="#Coordinate-Reference-Systems-Geographic-Coordinate-Systems" class="headerlink" title="Coordinate Reference Systems Geographic Coordinate Systems"></a><li>Coordinate Reference Systems</li><li> Geographic Coordinate Systems</li></h3><p>Ellipsoid - shape of the earth<br><br>Datum - where is the ellipsoid  goes</p>
 <p><a href="http://epsg.io/" target="_blank" rel="noopener">http://epsg.io/</a> to get the EPSG No. for certain address<br><br>EPSG standards for European petroleum survey group</p>
 <p>WGS84 – EPSG:4326</p>
@@ -658,20 +658,20 @@ dtype: object</code></pre><h4 id="Making-a-geodataframe-by-dataframe-and-geo-poi
 
 
 
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1d796447e80&gt;</code></pre><p><img src="/.com//output_50_1.png" alt="png"></p>
+<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1d796447e80&gt;</code></pre><p><img src="/.io//output_50_1.png" alt="png"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Districts.to_crs(&#123;<span class="string">'proj'</span>:<span class="string">'merc'</span>&#125;).plot(figsize = (<span class="number">10</span>,<span class="number">10</span>))</span><br></pre></td></tr></table></figure>
 
 
 
 
-<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1d79605efd0&gt;</code></pre><p><img src="/.com//output_51_1.png" alt="png"></p>
+<pre><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1d79605efd0&gt;</code></pre><p><img src="/.io//output_51_1.png" alt="png"></p>
 <h4 id="We-can-see-although-the-shape-is-still-similar-the-X-Y-axes-are-different-since-the-coordinate-system-has-changed"><a href="#We-can-see-although-the-shape-is-still-similar-the-X-Y-axes-are-different-since-the-coordinate-system-has-changed" class="headerlink" title="We can see although the shape is still similar, the X,Y axes are different  since the coordinate system has changed."></a>We can see although the shape is still similar, the X,Y axes are different  since the coordinate system has changed.</h4><h1 id="06-Customizing-basic-map-styles-with-geopandas"><a href="#06-Customizing-basic-map-styles-with-geopandas" class="headerlink" title="06. Customizing basic map styles with geopandas"></a>06. Customizing basic map styles with geopandas</h1><p>pass parameter to .plot<br>work with the ax variable</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ax = Districts.plot(figsize = (<span class="number">20</span>,<span class="number">20</span>))</span><br><span class="line">ax.axis(<span class="string">'off'</span>)</span><br></pre></td></tr></table></figure>
 
 
 
 
-<pre><code>(165.81877500000002, 179.184325, -47.934870000000004, -33.747730000000004)</code></pre><p><img src="/.com//output_55_1.png" alt="png"></p>
+<pre><code>(165.81877500000002, 179.184325, -47.934870000000004, -33.747730000000004)</code></pre><p><img src="/.io//output_55_1.png" alt="png"></p>
 <p>coloring shape</p>
 <p>1.fill - inside part<br>2. strike/line/edge - outline </p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ax = Districts.plot(figsize = (<span class="number">10</span>,<span class="number">10</span>), color = <span class="string">'grey'</span>, edgecolor = <span class="string">'white'</span>)</span><br><span class="line">ax.axis(<span class="string">'off'</span>)</span><br></pre></td></tr></table></figure>
@@ -679,13 +679,13 @@ dtype: object</code></pre><h4 id="Making-a-geodataframe-by-dataframe-and-geo-poi
 
 
 
-<pre><code>(165.81877500000002, 179.184325, -47.934870000000004, -33.747730000000004)</code></pre><p><img src="/.com//output_57_1.png" alt="png"></p>
+<pre><code>(165.81877500000002, 179.184325, -47.934870000000004, -33.747730000000004)</code></pre><p><img src="/.io//output_57_1.png" alt="png"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ax = Districts.plot(figsize = (<span class="number">10</span>,<span class="number">10</span>), color = <span class="string">'#CCCCCC'</span>, edgecolor = <span class="string">'#FF0000'</span>)</span><br><span class="line">ax.axis(<span class="string">'off'</span>)</span><br></pre></td></tr></table></figure>
 
 
 
 
-<pre><code>(165.81877500000002, 179.184325, -47.934870000000004, -33.747730000000004)</code></pre><p><img src="/.com//output_58_1.png" alt="png"></p>
+<pre><code>(165.81877500000002, 179.184325, -47.934870000000004, -33.747730000000004)</code></pre><p><img src="/.io//output_58_1.png" alt="png"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ax = cities.plot(figsize = (<span class="number">10</span>,<span class="number">10</span>), color = <span class="string">'#CCCCCC'</span>, edgecolor = <span class="string">'#FF0000'</span>, linewidth = <span class="number">5</span>)</span><br><span class="line">ax.axis(<span class="string">'off'</span>)</span><br></pre></td></tr></table></figure>
 
 
@@ -694,13 +694,13 @@ dtype: object</code></pre><h4 id="Making-a-geodataframe-by-dataframe-and-geo-poi
 <pre><code>(168.32748359957623,
  178.38357246311102,
  -45.94570795960331,
- -34.986255336266005)</code></pre><p><img src="/.com//output_59_1.png" alt="png"></p>
+ -34.986255336266005)</code></pre><p><img src="/.io//output_59_1.png" alt="png"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ax = Districts.plot(figsize = (<span class="number">10</span>,<span class="number">10</span>), color = <span class="string">'#CCCCCC'</span>, edgecolor = <span class="string">'#FF0000'</span>, linewidth = <span class="number">0.25</span>)</span><br><span class="line">ax.axis(<span class="string">'off'</span>)</span><br></pre></td></tr></table></figure>
 
 
 
 
-<pre><code>(165.81877500000002, 179.184325, -47.934870000000004, -33.747730000000004)</code></pre><p><img src="/.com//output_60_1.png" alt="png"></p>
+<pre><code>(165.81877500000002, 179.184325, -47.934870000000004, -33.747730000000004)</code></pre><p><img src="/.io//output_60_1.png" alt="png"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Districts.head()</span><br></pre></td></tr></table></figure>
 
 
@@ -789,29 +789,29 @@ dtype: object</code></pre><h4 id="Making-a-geodataframe-by-dataframe-and-geo-poi
 
 
 
-<pre><code>(165.81877500000002, 179.184325, -47.934870000000004, -33.747730000000004)</code></pre><p><img src="/.com//output_62_1.png" alt="png"></p>
+<pre><code>(165.81877500000002, 179.184325, -47.934870000000004, -33.747730000000004)</code></pre><p><img src="/.io//output_62_1.png" alt="png"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ax = Districts.plot(figsize = (<span class="number">10</span>,<span class="number">10</span>), color = <span class="string">'green'</span>)</span><br><span class="line">ax.axis(<span class="string">'off'</span>)</span><br></pre></td></tr></table></figure>
 
 
 
 
-<pre><code>(165.81877500000002, 179.184325, -47.934870000000004, -33.747730000000004)</code></pre><p><img src="/.com//output_63_1.png" alt="png"></p>
+<pre><code>(165.81877500000002, 179.184325, -47.934870000000004, -33.747730000000004)</code></pre><p><img src="/.io//output_63_1.png" alt="png"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ax = Districts.plot(figsize = (<span class="number">10</span>,<span class="number">10</span>), color = <span class="string">'green'</span>,  markersize =<span class="number">100</span> ,alpha =<span class="number">0.5</span>)</span><br><span class="line">ax.axis(<span class="string">'off'</span>)</span><br></pre></td></tr></table></figure>
 
 
 
 
-<pre><code>(165.81877500000002, 179.184325, -47.934870000000004, -33.747730000000004)</code></pre><p><img src="/.com//output_64_1.png" alt="png"></p>
+<pre><code>(165.81877500000002, 179.184325, -47.934870000000004, -33.747730000000004)</code></pre><p><img src="/.io//output_64_1.png" alt="png"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ax = cities.plot(figsize = (<span class="number">10</span>,<span class="number">10</span>), color = <span class="string">'green'</span>,  markersize =<span class="number">100</span> ,alpha =<span class="number">0.5</span>)</span><br></pre></td></tr></table></figure>
 
 
-<p><img src="/.com//output_65_0.png" alt="png"></p>
+<p><img src="/.io//output_65_0.png" alt="png"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ax = cities.plot(figsize = (<span class="number">10</span>,<span class="number">10</span>), color = <span class="string">'green'</span>,  markersize =<span class="number">100</span> ,alpha =<span class="number">0.5</span>)</span><br><span class="line">ax.axis(<span class="string">'off'</span>)</span><br><span class="line">ax.set_xlim([<span class="number">170</span>,<span class="number">176</span>])</span><br><span class="line">ax.set_ylim([<span class="number">-42</span>,<span class="number">-36</span>])</span><br></pre></td></tr></table></figure>
 
 
 
 
-<pre><code>(-42, -36)</code></pre><p><img src="/.com//output_66_1.png" alt="png"></p>
+<pre><code>(-42, -36)</code></pre><p><img src="/.io//output_66_1.png" alt="png"></p>
 <h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h1><li>https://www.youtube.com/watch?v=JN35I8EYD4M&list=PLewNEVDy7gq3DjrPDxGFLbHE4G2QWe8Qh&index=9
 </li><li>https://geopandas.org/
 </li><li>http://epsg.io/
@@ -821,7 +821,7 @@ dtype: object</code></pre><h4 id="Making-a-geodataframe-by-dataframe-and-geo-poi
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/15/Geopandas-Practise-Part1/" data-id="ck915ij4c0000boul1kside22" class="article-share-link">Share</a>
+      <a data-url="https://lixiaojzh.github.io/2020/04/15/Geopandas-Practise-Part1/" data-id="ck915lb960000dkuldtgr4rkx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -870,7 +870,7 @@ dtype: object</code></pre><h4 id="Making-a-geodataframe-by-dataframe-and-geo-poi
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/04/15/hello-world/" data-id="ck915ij4y0001boul0oon7bap" class="article-share-link">Share</a>
+      <a data-url="https://lixiaojzh.github.io/2020/04/15/hello-world/" data-id="ck915lb9q0001dkul3mimgyt2" class="article-share-link">Share</a>
       
       
     </footer>
